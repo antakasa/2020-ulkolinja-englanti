@@ -1,7 +1,7 @@
 export {default as AreenaClip} from './areenaClip.js';
 export {default as Arrows} from './arrows.js';
-export {default as BackgroundStill} from './backgroundStill.js';
-export {default as BackgroundVideo} from './backgroundVideo.js';
+export {default as BackgroundStill} from './BackgroundStill.js';
+export {default as BackgroundVideo} from './BackgroundVideo.js';
 export {default as Div100VhMinusYleHeader} from './Div100VhMinusYleHeader.js';
 export {default as FinalPage} from './finalPage.js';
 export {default as GraphImage} from './graphImage.js';
