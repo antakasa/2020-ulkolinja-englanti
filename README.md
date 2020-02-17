@@ -1,4 +1,4 @@
-This repository has files and instructions on how to create new Ulkolinja video feature project – including setting up the content system where content creators can edit the site without touching the source files.
+This repository has files and instructions on how to create new Ulkolinja video feature project – including setting up the content system where content creators can edit the site without touching the source files. Assuming you have some understanding on basic Git operations and Fynd, the whole process shouldn't take more than an hour.  
 
 Prerequisities
 
@@ -45,4 +45,4 @@ When all the content editing has been done, and you want to publish site to Ylei
 1. go to repo and run ```git pull```
 2. run ```npm run deploy```
 3. Site should be available at lusi-dataviz.ylestatic.fi/[package-name]/index.html.
-4. When embedding content into Fynd, select "External layout" and "Export as external content". The feature should work in Yle app too. 
+4. When embedding content into Fynd, in article settings select "External layout" and "Export as external content". The feature should work in Yle app too. 
