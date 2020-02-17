@@ -44,4 +44,4 @@ When all the content editing has been done, and you want to publish site to Ylei
 
 1. go to repo and run ```git pull```
 2. run ```npm run deploy```
-3. Site should be available at lusi-dataviz.ylestatic.fi/[package-name]
+3. Site should be available at lusi-dataviz.ylestatic.fi/[package-name]/index.html
