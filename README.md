@@ -31,7 +31,14 @@ We use Netlify as a place where the content system lives. Follow these steps:
 6. In site settings go to  --> Identity. Click "Enable identity".
 7. In the site settings, go to Identity --> Services. Click "Enable Git Gateway".
 8. Go back to your Netlify homesite by clicking the brand logo on the upper left corner. Select your project in the list.  On the top menu there are links such as "Overview, deploys, functions..." Click "Identity". 
-9. Click invite users and write e-mail to users you like to be able to log-in to content system.
-10. Now go to [your-site-name].netlify.com/admin
+9. Click "invite users" and write e-mail addresses of users you like to be able to log-in to content system. ** Netlify sends an confirmation link via e-mail. Make sure the users have clicked this link.**
+10. Assuming the deployment has finished without errors, The CMS should be availalbe at [your-site-name].netlify.com/admin.
 
-In case of error, see the deploy information. Has the deploy failed? Have a look at the log. 
+In case of error, see the deploy information in Netlify panel. Has the deploy failed? In that case, have a look at the log. If there is something wrong with the code, make changes in the code editor in your computer and run ```git commit -m "fix"``` ```git push -u origin master```. Netlify starts the deploy process automatically whenever something new has been committed into the repository. 
+
+## Publishing to Yle
+
+When all content editing has been done, and you want to publish site to Yleisradio AWS S3 (assuming you have the access rights):
+
+1. go to repo and run ```git pull```
+2. run ```npm run deploy```
