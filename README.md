@@ -1,4 +1,4 @@
-This repository has files and instructions on how to create new Ulkolinja video feature project – including the content system where content creators can edit the site.
+This repository has files and instructions on how to create new Ulkolinja video feature project – including setting up the content system where content creators can edit the site without touching the source files.
 
 Prerequisities
 
