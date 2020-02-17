@@ -2,7 +2,7 @@ This repository has files and instructions on how to create new Ulkolinja video 
 
 Prerequisities
 
-* Github
+* Github account
 * Node (v.8 or above)
  
 ## Steps to create new project and push it to Github 
@@ -15,15 +15,15 @@ Prerequisities
 6. Initialize a new git project ```git init```
 7. Make all files to be tracked by Git ```git add . ```
 8. Create an initial commit ``` git commit -a -m "initial commit"```
-9. Create new Github repository. This is mandatory. Go to https://github.com/new. Doesn't have to be public repo, private is fine. When created, copy the repo's ssh address to clipboard (you need it in next step). 
+9. Create new Github repository. This is mandatory. Go to https://github.com/new. Doesn't have to be public repo, private is fine. When created, copy the repo's ssh address to clipboard (you need it in the next step). 
 10. Add the remote repo you created into your project ```git remote add origin git@github.com:yourusername/yourrepo.git``` 
-11. Push the content to your repo ```git push -u origin master ```
+11. Push the content into your repo ```git push -u origin master ```
 
 ### Create the content system - Netlify part
 
 We use Netlify as a place where the content system lives. Follow these steps:
 
-1. Log-in / register with your Github account in app.netlify.com.
+1. Log-in / register with your **Github account** in app.netlify.com. 
 2. Create new "continous deployment" project (from Github) https://app.netlify.com/start
 3. Choose the repo you created in the previous steps.
 4. When the next view opens, scroll down to "build command". Insert ```npm run build:test``` here Also, insert ```build``` to "publish directory" field.  
