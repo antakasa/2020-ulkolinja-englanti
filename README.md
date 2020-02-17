@@ -1,3 +1,5 @@
+This repository has files and instructions on how to create new Ulkolinja video feature project – including the content system where content creators can edit the site.
+
 Prerequisities
 
 * Github
@@ -38,7 +40,8 @@ In case of error, see the deploy information in Netlify panel. Has the deploy fa
 
 ## Publishing to Yle
 
-When all content editing has been done, and you want to publish site to Yleisradio AWS S3 (assuming you have the access rights):
+When all the content editing has been done, and you want to publish site to Yleisradio AWS S3 (assuming you have the access rights):
 
 1. go to repo and run ```git pull```
 2. run ```npm run deploy```
+3. Site should be available at lusi-dataviz.ylestatic.fi/[package-name]
