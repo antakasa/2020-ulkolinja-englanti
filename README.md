@@ -23,7 +23,7 @@ We use Netlify as a place where the content system lives. Follow these steps:
 
 1. Log-in / register with your Github account in app.netlify.com.
 2. Create new "continous deployment" project (from Github) https://app.netlify.com/start
-3. Choose t`e repo you created in the previous steps.
+3. Choose the repo you created in the previous steps.
 4. When the next view opens, scroll down to "build command". Insert ```npm run build:test``` here Also, insert ```build``` to "publish directory" field.  
 5. press deploy site. 
 6. go to "site settings".
@@ -32,4 +32,6 @@ We use Netlify as a place where the content system lives. Follow these steps:
 7. In the site settings, go to Identity --> Services. Click "Enable Git Gateway".
 8. Go back to your Netlify homesite by clicking the brand logo on the upper left corner. Select your project in the list.  On the top menu there are links such as "Overview, deploys, functions..." Click "Identity". 
 9. Click invite users and write e-mail to users you like to be able to log-in to content system.
-10. Now go to ul-englanti-koyhyys.netlify.com/admin
+10. Now go to [your-site-name].netlify.com/admin
+
+In case of error, see the deploy information. Has the deploy failed? Have a look at the log. 
