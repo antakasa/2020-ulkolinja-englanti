@@ -58,7 +58,7 @@
   .cover {
     width: 50%;
     margin-left: auto;
-    justify-content: flex-end;
+    justify-content: center;
   }
 
   .cover.fullscreen {
