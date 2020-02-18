@@ -1,7 +1,7 @@
 import React from 'react';
 import './paragraphCover.css';
 import Pagination from './pagination';
-import BrandLogo from '../images/Ulkolinja_logo.svg';
+import BrandLogo from '../images/uusilogo.svg';
 import AreenaClip from './areenaClip';
 import ShareButtons from './shareButtons';
 import {data} from '../data';
