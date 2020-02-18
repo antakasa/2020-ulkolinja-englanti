@@ -1,28 +1,35 @@
 import React from 'react';
-import './arrows.css';
-import nuoli from '../images/nuoli.png';
-import petrooliNuoli from '../images/nuoli_petrooli.png';
-import palloNuoli from '../images/nuoli_pallero.png';
+import './paragraphCover.css';
+import Pagination from './pagination';
+import BrandLogo from '../images/ulkolinja_logo.svg';
+import AreenaClip from './areenaClip';
+import ShareButtons from './shareButtons';
 import {data} from '../data';
-const Arrows = ({type, desktop, index}) => {
-  if (type === 'cover' && !desktop) {
-    return <img src={nuoli} className="venezuela-arrow right mobile bounce" />;
-  } else if (type === 'cover' && desktop) {
-    return (
-      <img src={palloNuoli} className="venezuela-arrow right desktop cover" />
-    );
-  } else if (type !== 'cover' && index !== data.length - 1 && desktop) {
-    return (
-      <>
-        <img src={nuoli} className="venezuela-arrow right desktop" />
-        <img src={nuoli} className="venezuela-arrow left desktop" />
-      </>
-    );
-  } else if (index === data.length - 1 && desktop) {
-    return <img src={nuoli} className="venezuela-arrow left desktop" />;
-  } else {
-    return null;
-  }
+const FinalPage = ({index, swiper, areenaId}) => {
+  const shouldRenderAreena = () => {
+    if (swiper && swiper.realIndex) {
+      const index = swiper.realIndex;
+      return data[index].type === 'finalPage';
+    } else {
+      return false;
+    }
+  };
+
+  return (
+    <>
+      <div className="cover cover-middle">
+        <img
+          className="cover-brand-image"
+          alt="Ulkolinjan logo"
+          src={BrandLogo}
+        />
+        <h2 className="cover-title">Tästä pääset syvemmälle</h2>
+        <AreenaClip id={areenaId} renderNow={shouldRenderAreena()} />
+        <ShareButtons url={window.location.href} />
+      </div>
+      <div className="cover-gradient" />
+    </>
+  );
 };
 
-export default Arrows;
+export default FinalPage;
