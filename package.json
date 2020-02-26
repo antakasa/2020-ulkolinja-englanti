@@ -1,25 +1,17 @@
 {
-  "name": "2020-02-ulkolinja-englanti",
+  "name": "2020-ulkolinja-englanti",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start":
-      "cross-var cross-env NODE_ENV=development BUILD_PATH=normal APP_NAME=$npm_package_name parcel index.html",
-    "gitrepo":
-      "cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name",
+    "start": "cross-var cross-env NODE_ENV=development BUILD_PATH=normal APP_NAME=$npm_package_name parcel index.html",
+    "gitrepo": "cross-var hub create -p Yleisradio/lusi-dataviz-$npm_package_name",
     "prestart": "node loadSubs.js",
-    "deploy":
-      "npm run build && npx dataviz-deploy generate --dir build && dataviz-deploy sync lusi $npm_package_name",
-    "deploy:test":
-      "npm run build:test  && npx dataviz-deploy generate --dir build  && dataviz-deploy sync lusi-test $npm_package_name",
-    "deploy:fynd":
-      "cross-var cross-env npm run build:fynd && npx dataviz-deploy generate --dir build && dataviz-deploy sync lusi $npm_package_name",
-    "build:fynd":
-      "cross-var cross-env BUILD_PATH=fynd NODE_ENV=production APP_NAME=$npm_package_name parcel build --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/ index.html --out-dir ./build && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
-    "build":
-      "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/ index.html --out-dir ./build && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
-    "build:test":
-      "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html  --out-dir ./build && cross-var echo \"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\""
+    "deploy": "npm run build && npx dataviz-deploy generate --dir build && dataviz-deploy sync lusi $npm_package_name",
+    "deploy:test": "npm run build:test  && npx dataviz-deploy generate --dir build  && dataviz-deploy sync lusi-test $npm_package_name",
+    "deploy:fynd": "cross-var cross-env npm run build:fynd && npx dataviz-deploy generate --dir build && dataviz-deploy sync lusi $npm_package_name",
+    "build:fynd": "cross-var cross-env BUILD_PATH=fynd NODE_ENV=production APP_NAME=$npm_package_name parcel build --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/ index.html --out-dir ./build && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
+    "build": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build --public-url https://lusi-dataviz.ylestatic.fi/$npm_package_name/ index.html --out-dir ./build && cross-var echo \"https://lusi-dataviz.ylestatic.fi/$npm_package_name\"",
+    "build:test": "cross-var cross-env NODE_ENV=production APP_NAME=$npm_package_name parcel build index.html  --out-dir ./build && cross-var echo \"https://lusi-dataviz.test.ylestatic.fi/$npm_package_name\""
   },
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
@@ -45,14 +37,21 @@
     "webvtt-parser": "git+https://github.com/annevk/webvtt.git"
   },
   "staticFiles": {
-    "staticPath": ["src/public"],
+    "staticPath": [
+      "src/public"
+    ],
     "watcherGlob": "**"
   },
   "postcss": {
     "modules": false,
     "plugins": {
       "autoprefixer": {
-        "browsers": [">1%", "last 4 versions", "Firefox ESR", "not ie < 9"],
+        "browsers": [
+          ">1%",
+          "last 4 versions",
+          "Firefox ESR",
+          "not ie < 9"
+        ],
         "flexbox": "no-2009"
       }
     }
