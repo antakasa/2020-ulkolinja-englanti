@@ -1,0 +1,7 @@
+{
+  "type": "subtitled-video",
+  "src": "/uploads/100_doctor_1.mp4",
+  "sub": "/uploads/doctor.vtt",
+  "tg": "/uploads/tg_zahid.png",
+  "id": "doctor_vtt"
+}
