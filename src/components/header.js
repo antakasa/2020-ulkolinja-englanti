@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../images/ulkolinja_logo_pieni.png';
+import logo from '../images/uusilogo.svg';
 import Pagination from './pagination';
 import './header.css';
 import {data} from '../data';
@@ -40,11 +40,12 @@ const Header = ({index, splitScreen, nextSlideFunc, mobile}) => {
                   visibility: notVisible() ? 'hidden' : '',
                 }}
               />
-              {mobile && index !== data.length - 1 && (
-                <div onClick={() => nextSlideFunc()}>
-                  <img src={tap} />
-                </div>
-              )}
+              {mobile &&
+                index !== data.length - 1 && (
+                  <div onClick={() => nextSlideFunc()}>
+                    <img src={tap} />
+                  </div>
+                )}
             </>
           }
         </div>
