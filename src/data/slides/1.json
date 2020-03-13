@@ -1,6 +1,6 @@
 {
   "type": "background-video",
-  "bottom": false,
+  "bottom": true,
   "text": "Englannissa on yli 300 000 asunnotonta ja se näkyy kaupunkien kaduilla.\n\nAsunnottomien määrä on kasvanut yli 20 000 ihmisellä viimeisen parin vuoden aikana.",
   "id": "1",
   "src": "/uploads/street_9_1.mp4"
