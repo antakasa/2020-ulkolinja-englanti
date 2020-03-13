@@ -4,15 +4,6 @@
       "collectionName": "Etusivu"
     },
     {
-      "collectionName": "Loppusivu missä Areena player"
-    },
-    {
-      "collectionName": "Tekijätiedot 2"
-    },
-    {
-      "collectionName": "Tekijätiedot 1"
-    },
-    {
       "collectionName": "1"
     },
     {
@@ -85,6 +76,9 @@
       "collectionName": "graham_cri_vtt"
     },
     {
+      "collectionName": "26"
+    },
+    {
       "collectionName": "graham_vtt"
     },
     {
@@ -95,6 +89,15 @@
     },
     {
       "collectionName": "doctor_vtt"
+    },
+    {
+      "collectionName": "Loppusivu missä Areena player"
+    },
+    {
+      "collectionName": "Tekijätiedot 2"
+    },
+    {
+      "collectionName": "Tekijätiedot 1"
     }
   ]
 }
