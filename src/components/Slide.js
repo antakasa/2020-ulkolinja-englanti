@@ -19,7 +19,7 @@ const SlideContainer = ({
   const isDesktop = width >= 1025;
 
   return (
-    <div>
+    <div style={{height: '100%'}}>
       {prevClickAvailable && <div onClick={goPrev} id="prev-catch" />}
       {nextClickAvailable && <div onClick={goNext} id="next-catch" />}
       {determineBackgroundType(e, isDesktop, triggerCoverLoaded)}
