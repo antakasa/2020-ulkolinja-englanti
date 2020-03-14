@@ -11,7 +11,7 @@ const createSubtitleTrack = (video, id, subPath) => {
   if (!id) return;
 
   const matchingKey = Object.keys(subs).filter(e => {
-    return subPath === e.replace('src/public', '');
+    return subPath.indexOf(e.replace('src/public', '')) >= 0;
   });
   console.log(matchingKey);
   if (matchingKey.length === 0) return;
